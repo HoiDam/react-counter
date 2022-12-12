@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 
 
-const Counter = () => {
+function Counter() {
     const [number, setNumber] = useState(0);
 
-    const onIncrease = () =>{ setNumber(number+1)}
-    const onDecrease = () =>{ setNumber(number-1)}
+    const onIncrease = () => { setNumber(number + 1); };
+    const onDecrease = () => { setNumber(number - 1); };
     return (
         <div>
             <button onClick={onIncrease}>+</button>
