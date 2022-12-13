@@ -9,8 +9,12 @@ const counterSlice = createSlice({
     reducers:{
         updateSize: (state, action)=>{
             state.size = action.payload;
+        },
+        setSum:(state,action)=>{
+            state.sum = action.payload;
         }
     }
 })
 export default counterSlice.reducer;
 export const {updateSize} =  counterSlice.actions;
+export const {setSum} =  counterSlice.actions;
