@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 
 
 function Counter(props) {
@@ -12,6 +12,9 @@ function Counter(props) {
         setNumber(number - 1);
         props.updateSum(-1);
     };
+    useEffect(() => {
+        setNumber(0);
+    }, [props.size  ]);
     return (
         <div>
             <button onClick={onIncrease}>+</button>
