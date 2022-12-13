@@ -1,7 +1,7 @@
 import './App.css';
-import Counter from './features/Counter';
-import CounterGroup from './features/CounterGroup';
-import MultipleCounter from './features/MultipleCounter';
+import Counter from './features/counter/Counter';
+import CounterGroup from './features/counter/CounterGroup';
+import MultipleCounter from './features/counter/MultipleCounter';
 
 function App() {
   return (
